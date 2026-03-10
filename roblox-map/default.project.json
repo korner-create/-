@@ -1,0 +1,46 @@
+{
+  "name": "FantasyForestBattleMap",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "MapConfig": {
+        "$path": "src/ReplicatedStorage/MapConfig.lua"
+      },
+      "GameEvents": {
+        "$path": "src/ReplicatedStorage/GameEvents.lua"
+      }
+    },
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "GameManager": {
+        "$path": "src/ServerScriptService/GameManager.server.lua"
+      },
+      "RoundManager": {
+        "$path": "src/ServerScriptService/RoundManager.server.lua"
+      },
+      "ItemSpawner": {
+        "$path": "src/ServerScriptService/ItemSpawner.server.lua"
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "PlayerController": {
+          "$path": "src/StarterPlayerScripts/PlayerController.client.lua"
+        }
+      }
+    },
+
+    "Workspace": {
+      "$className": "Workspace",
+      "MapBuilder": {
+        "$path": "src/Workspace/MapBuilder.server.lua"
+      }
+    }
+  }
+}
